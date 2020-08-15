@@ -1,0 +1,472 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: bold;
+	src: url('../fonts/eot/IRANSansWeb_Bold.eot');
+	src: url('../fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_Bold.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 500;
+	src: url('../fonts/eot/IRANSansWeb_Medium.eot');
+	src: url('../fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_Medium.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 300;
+	src: url('../fonts/eot/IRANSansWeb_Light.eot');
+	src: url('../fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_Light.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: 200;
+	src: url('../fonts/eot/IRANSansWeb_UltraLight.eot');
+	src: url('../fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+	font-family: IRANSans;
+	font-style: normal;
+	font-weight: normal;
+	src: url('../fonts/eot/IRANSansWeb.eot');
+	src: url('../fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'),  /* IE6-8 */
+		 url('../fonts/woff2/IRANSansWeb.woff2') format('woff2'),  /* FF39+,Chrome36+, Opera24+*/
+		 url('../fonts/woff/IRANSansWeb.woff') format('woff'),  /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+		 url('../fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+
+
+
+html, body{
+    color:#fff;
+    font-family: 'IRANSans' ,'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+   
+    height: 100vh;
+}
+
+.clearfix { zoom: 1}
+.clearfix:after {
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+
+
+
+
+/*----------------------------------------------------------------------*/
+/* COMPONEMTs */
+/*----------------------------------------------------------------------*/
+.row{
+    max-width: 1140px;
+    margin: 0 auto;
+    text-align: center;
+}
+.row2{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+section{
+    padding: 80px 0;
+ 
+}
+
+.box {
+    padding: 1%;
+}
+
+h1 ,h2 , h3 {
+   
+    font-weight: 600;
+    font-size: 40px;
+
+    font-family: 'Poppins', sans-serif;
+  
+}
+
+
+p {
+    line-height: 40px;
+}
+
+/*----------------------------------------------------------------------*/
+/* client-trainer*/
+/*----------------------------------------------------------------------*/
+
+
+header {
+    height: 100vh;
+    width: 100%;
+}
+
+
+
+.client {
+      background-image: linear-gradient(#f2cc0f98, #f2cc0f98), url(img/gril.png);
+    background-size: cover;
+    width: 50% ;
+    min-height: 100vh;
+    background-color:#f2cc0f ;
+    display: block;
+    float: left;
+    padding: 10px 30px ;
+
+}
+
+
+.trainer {
+    background-image: linear-gradient(#231f9f98, #231f9f98), url(img/boy.png);
+    width: 50%;
+    min-height: 100vh;
+    background-color: #231f9f;
+    display: block;
+    float: right;
+    padding: 10px 30px ;
+
+    
+}
+
+.logo{
+    width: 50px;
+    height: auto;
+    float: left;
+}
+
+
+
+
+
+.btn-login:link,
+.btn-login:visited {
+    float: right;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    width: 120px;
+    padding: 8px;
+    height: 40px;
+    border-radius: 7PX;
+    transition: all 0.2s;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.295);
+    
+}
+
+
+.btn-login:active,
+.btn-login:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+
+
+.client-title h1 {
+    color: #231f9f;
+    font-family: IRANsans;
+    font-size: 250%;
+}
+
+
+.pic-client {
+    width: 300px;
+    height: auto;
+     margin-top: 100px;
+}
+
+
+.client-p {
+    font-size: 120%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+   .btn-start:link,
+.btn-start:visited {
+    margin-top: 15px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    width: 160px;
+    padding: 8px 20px;
+    height: 40px;
+    border-radius: 7PX;
+    transition: all 0.2s;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.295);
+    
+}
+
+
+.btn-start:active,
+.btn-start:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+
+.pic-trainer{
+    width: 350px;
+    height: auto;
+     margin-top: 100px;
+
+}
+
+
+.trainer-title h1{
+    color:#f2cc0f ;
+    font-family: IRANsans;
+    font-size: 250%;
+    margin-top: 45px;
+}
+
+
+.trainer-p {
+    font-size: 120%;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+
+/*----------------------------------------------------------------------*/
+/* aboutr*/
+/*----------------------------------------------------------------------*/
+
+
+
+.about {
+    min-height: 935px;
+    height:auto;
+    width: 100%;
+    background-image:  url(img/Background.png);
+
+    background-position: center center;
+background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-size: cover;
+
+}
+
+.textarea-about {
+    float: left;
+    text-align: center;
+    min-height: 935px;
+    
+
+}
+
+
+.textarea-about h1 {
+    font-size: 400%;
+    font-family: IRANsans;
+    color: #231f9f;
+
+}
+
+
+.textarea-about p {
+    font-family: IRANsans;
+    margin: 20px 200px 100px 200px;
+    
+}
+
+
+
+
+
+.logo-batamrin {
+    float: right;
+    text-align: center;
+    min-height: 935px;
+    
+
+}
+
+
+
+.big-logo{
+    width: 600px;
+    margin-top: 50%;
+   transform: translate(0, -60%);
+
+}
+
+  
+.more-info:link,
+
+.more-info:visited {
+    margin-top: 35px;
+    text-decoration: none;
+    color: #000;
+    background-color: #fff;
+    width: 160px;
+    padding: 8px 20px;
+    height: 40px;
+    border-radius: 7PX;
+    transition: all 0.2s;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.295);
+    
+}
+
+
+
+.more-info:active,
+
+.more-info:hover {
+    background-color: rgb(190, 190, 190);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------*/
+/* contactt*/
+/*----------------------------------------------------------------------*/
+
+
+
+
+
+
+.contact-us{
+    min-height: 936px;
+    height:auto;
+    width: 100%;
+    background-image:  url(img/Background2.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+.title-sec2 h1 {
+    font-size: 400%;
+    font-family: iransans;
+    margin-top: -20px;
+    text-align: center
+   
+    
+    
+    
+}
+
+
+
+label{
+    float: right;
+    padding-top: 15px;
+    margin:10px;
+    color: #000;
+    margin-right: 30px;
+}
+input[type=name],
+input[type=email],
+textarea {
+    width: 80%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin:10px;
+    color: #000;
+    margin-left: -140px;
+}
+
+input[type=submit] {
+    width: 200px;
+    height: 40px;
+    background-color:#f2cc0f ;
+    border-radius: 5px;
+    border: none;
+    color: #000;
+    margin-top: 20px;
+    transition: background-color 0.2s;
+}
+input[type=submit]:hover {
+    
+    background-color:#caaa0b ;
+  
+}
+
+
+
+
+
+.social-nav {
+    font-size: 300%;
+    list-style: none;
+    margin-top: 250px;
+    color: #f2cc0f;
+}
+
+.social-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.social-nav li a:link,
+.social-nav li a:visited {
+    padding: 8px 0;
+    color: #f2cc0f;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+}
+
+.social-nav li a:hover,
+.social-nav li a:active {
+    color: #d6b40c;
+}
+
+
+
+footer {
+    background-color: black;
+    text-align: center;
+    font-size: 60%;
+}
+
+
+
+
+
