@@ -12,7 +12,7 @@ import (
 )
 
 func main() {
-
+	//handle url path to handler
 	http.HandleFunc("/", mainPage.Index)
 	http.HandleFunc("/index", mainPage.Index)
 
