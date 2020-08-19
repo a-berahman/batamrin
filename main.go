@@ -24,6 +24,7 @@ func main() {
 	if err != nil {
 		log.Fatal("load enviroment face to : ", err)
 	}
+	//if enviroment value doesn't support PORT set default port as a "123"
 	port := os.Getenv("PORT")
 	if port == "" {
 		port = "123"
