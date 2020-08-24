@@ -20,6 +20,7 @@ func main() {
 	http.Handle("/public/", http.StripPrefix("/public", http.FileServer(http.Dir("public"))))
 
 	//load enviroment variables
+
 	err := godotenv.Load(common.EnvConfig)
 	if err != nil {
 		log.Fatal("load enviroment face to : ", err)
